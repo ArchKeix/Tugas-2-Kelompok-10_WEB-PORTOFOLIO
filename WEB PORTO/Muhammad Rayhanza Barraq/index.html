@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello World</title>
+    <style>
+      :root {
+        font-family: Arial, sans-serif;
+        color: #1f2937;
+        background: #fef3c7;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        text-align: center;
+      }
+
+      h1 {
+        margin: 0 0 1.5rem;
+        font-size: clamp(2.5rem, 8vw, 5rem);
+        letter-spacing: 0.04em;
+      }
+
+      .smile {
+        font-size: clamp(7rem, 24vw, 14rem);
+        line-height: 1;
+        filter: drop-shadow(0 0.5rem 0.4rem rgb(0 0 0 / 15%));
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Hello World</h1>
+      <div class="smile" role="img" aria-label="Emotikon senyum besar">😊</div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #1e1e2e; /* Catppuccin Mocha Base */
+    color: #cdd6f4; /* Text */
+    overflow-x: hidden;
+  }
+}
+
+@layer utilities {
+  /* Minimalist styling and radial gradients */
+  .bg-radial-gradient {
+    background: 
+      radial-gradient(circle at 10% 20%, rgba(203, 166, 247, 0.04) 0%, transparent 40%),
+      radial-gradient(circle at 90% 80%, rgba(137, 180, 250, 0.04) 0%, transparent 40%),
+      #181825; /* Catppuccin Mantle */
+  }
+
+  .text-glow-mauve {
+    text-shadow: 0 0 16px rgba(203, 166, 247, 0.3);
+  }
+
+  .text-glow-blue {
+    text-shadow: 0 0 16px rgba(137, 180, 250, 0.3);
+  }
+
+  /* Custom glass floating elements */
+  .glass-navbar {
+    background-color: rgba(24, 24, 37, 0.75); /* Mantle with transparency */
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(69, 71, 90, 0.4); /* Surface 0 */
+  }
+
+  .glass-card {
+    background-color: rgba(30, 30, 46, 0.45); /* Base with transparency */
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border: 1px solid rgba(69, 71, 90, 0.25); /* Surface 0 */
+  }
+
+  /* Accent gradient text */
+  .gradient-text-mauve-blue {
+    background: linear-gradient(135deg, #cba6f7 0%, #89b4fa 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .gradient-text-blue-green {
+    background: linear-gradient(135deg, #89b4fa 0%, #a6e3a1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* Glow effects */
+  .glow-blob-1 {
+    background: radial-gradient(circle, rgba(203, 166, 247, 0.15) 0%, transparent 70%);
+  }
+
+  .glow-blob-2 {
+    background: radial-gradient(circle, rgba(137, 180, 250, 0.15) 0%, transparent 70%);
+  }
+
+  /* Clean Scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #11111b; /* Crust */
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #313244; /* Surface 1 */
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #cba6f7; /* Mauve */
+  }
+}
+
+.font-pixel {
+  font-family: 'Silkscreen', monospace;
+  letter-spacing: -0.02em;
+}
